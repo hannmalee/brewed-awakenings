@@ -10,7 +10,7 @@ const orders = getOrders()
 const findProduct = (order, allProducts) => {
     let orderProduct = null
 
-    for (const product in allProducts) {
+    for (const product of allProducts) {
         if (product.id === order.productId) {
             orderProduct = product
         }

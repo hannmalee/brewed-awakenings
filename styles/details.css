@@ -12,6 +12,8 @@
 }
 
 .orders {
-    font-size: 20rem;
+    flex-basis: 24%;
+    margin: 0 2rem;
+    padding: 1rem;
+    border: 1px dotted goldenrod; 
 }
-
