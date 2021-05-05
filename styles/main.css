@@ -1,5 +1,5 @@
-@import "./details.css";
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import "./details.css"; /* imports the details module to this module */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One"); /*imports the font we want to use from google */
 
 /*Typography
 --------------------------------------------------------------*/
