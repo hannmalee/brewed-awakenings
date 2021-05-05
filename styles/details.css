@@ -1,10 +1,10 @@
-.details {
-    display: flex;
+.details {  /* edits the look of the element with the #details id */
+    display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.detail--column {
+.detail--column { 
     flex-basis: 24%;
     margin: 0 2rem;
     padding: 1rem;
@@ -12,6 +12,8 @@
 }
 
 .orders {
-    font-size: 20rem;
+    flex-basis: 24%;
+    margin: 0 2rem;
+    padding: 1rem;
+    border: 1px dotted goldenrod; 
 }
-
