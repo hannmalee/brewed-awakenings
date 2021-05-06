@@ -22,19 +22,25 @@ document.addEventListener( // hey webpage, we need you to listen for events
         
             if (product.id === parseInt(productId)) { // parseInt: converts string into integer. product.id = "1", 
                 // parseInt changes to 1; since productId is a string, not an interger, we needed a way to convert 
-                // it so that we can compare values with product.id (we need to compare apples to apples (read: integers to integers))
-                window.alert(`${product.name} costs $${product.price}`) // if the previous statement is true, let's display that price. 
-                // since every object in the products array (in the database) contains a property of price, we won't run into any issues displaying. 
+                // it so that we can compare values with product.id (we need to compare apples to apples (read: 
+                // integers to integers))
+                window.alert(`${product.name} costs $${product.price}`) // if the previous statement is true, 
+                // let's display that price. 
+                // since every object in the products array (in the database) contains a property of price, 
+                // we won't run into any issues displaying. 
             }
         }
     }
 }
 )
-export const Products = () => { // lets use our data from the database to string interpolate, but only with a COPY of the database
+export const Products = () => { // lets use our data from the database to string interpolate, but only 
+    // with a COPY of the database
     let html = "<ul>" // puts the unordered list tag on the beginning html for formatting purposes
 
-    for (const product of products) { // iterates through the products array, assigning each individual object as "product"
-        html += `<li id="product--${product.id}">${product.name}</li>` // lets ADD (+=) this to the html via string interpolation
+    for (const product of products) { // iterates through the products array, assigning each individual 
+        // object as "product"
+        html += `<li id="product--${product.id}">${product.name}</li>` // lets ADD (+=) this to the 
+        // html via string interpolation
     }
 
     html += "</ul>" // ADDS the closing tag for the unordered list to the html
